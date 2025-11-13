@@ -1,0 +1,553 @@
+# Phase 2: Include Analysis Report
+# Erstellt: $(date)
+
+## Statistik
+
+Total source files: 645
+## Local Includes ("...")
+	#include "../botai/ai_funcs.h"
+	#include "g_funcs.h"
+#include "../../etmain/ui/menudef.h"
+#include "../../etmain/ui/menudef.h" // For vote options
+#include "../../src/botlib/be_interface.h"
+#include "../botai/	ai_dmq3.h"
+#include "../botai/ai_dmq3.h"
+#include "../botai/ai_func_decs.h"   // declare all ai functions
+#include "../botai/ai_main.h"
+#include "../botai/ai_team.h"
+#include "../botai/botai.h"          //bot ai interface
+#include "../botai/chars.h"
+#include "../botlib/aasfile.h"
+#include "../botlib/be_aas_def.h"
+#include "../botlib/l_libvar.h"
+#include "../botlib/l_memory.h"
+#include "../botlib/l_precomp.h"
+#include "../botlib/l_script.h"
+#include "../botlib/l_struct.h"
+#include "../bspc/l_log.h"
+#include "../bspc/l_mem.h"
+#include "../bspc/l_qfiles.h"
+#include "../bspc/qbsp.h"
+#include "../cgame/cg_local.h"
+#include "../cgame/tr_types.h"
+#include "../client/client.h"
+#include "../client/snd_local.h"
+#include "../curl-7.12.2/include/curl/curl.h"
+#include "../ft2/freetype.h"
+#include "../ft2/fterrors.h"
+#include "../ft2/ftimage.h"
+#include "../ft2/ftoutln.h"
+#include "../ft2/ftsystem.h"
+#include "../game/be_aas.h"
+#include "../game/be_ai_chat.h"
+#include "../game/be_ai_gen.h"
+#include "../game/be_ai_goal.h"
+#include "../game/be_ai_move.h"
+#include "../game/be_ea.h"
+#include "../game/bg_local.h"
+#include "../game/bg_public.h"
+#include "../game/botlib.h"
+#include "../game/botlib.h"      //bot lib interface
+#include "../game/g_local.h"
+#include "../game/q_shared.h"
+#include "../game/surfaceflags.h"
+#include "../jpeg-6/jconfig.h"       /* auto configuration options */
+#include "../jpeg-6/jconfig.h"       /* widely used configuration options */
+#include "../jpeg-6/jerror.h"        /* fetch error codes too */
+#include "../jpeg-6/jmorecfg.h"      /* seldom changed options */
+#include "../jpeg-6/jpegint.h"       /* fetch private declarations */
+#include "../jpeg-6/jpeglib.h"
+#include "../lib/setup.h"
+#include "../mssdk/include/dinput.h"
+#include "../mssdk/include/dsound.h"
+#include "../qcommon/cm_public.h"
+#include "../qcommon/qcommon.h"
+#include "../qcommon/qfiles.h"
+#include "../qcommon/unzip.h"
+#include "../qgl.h"
+#include "../renderer/glext.h"
+#include "../renderer/qgl.h"
+#include "../renderer/tr_local.h"
+#include "../renderer/tr_public.h"
+#include "../ui/ui_local.h"
+#include "../ui/ui_shared.h"
+#include "..\botlib\aasfile.h"
+#include "..\botlib\aasfile.h"         //aas_bbox_t
+#include "..\botlib\be_aas_cluster.h"
+#include "..\botlib\be_aas_optimize.h"
+#include "..\game\surfaceflags.h"
+#include "..\qcommon\cm_patch.h"
+#include "AvailabilityMacros.h"
+#include "GameRanger SDK/GameRanger.h"
+#include "HTAABrow.h"
+#include "HTReqMan.h"
+#include "MacPrefix.h"
+#include "MacPrefixCommon.h"
+#include "MacPrefixDebug.h"
+#include "MacPrefix_GameSpecific.h"
+#include "WWWFTP.h"
+#include "WWWFile.h"
+#include "WWWGophe.h"
+#include "WWWHTTP.h"                     /* HTTP access module */
+#include "WWWInit.h"
+#include "WWWLib.h"                          /* Global Library Include file */
+#include "WWWMIME.h"                     /* MIME parser/generator */
+#include "WWWNews.h"                     /* News access module */
+#include "aas_areamerging.h"
+#include "aas_cfg.h"
+#include "aas_create.h"
+#include "aas_edgemelting.h"
+#include "aas_facemerging.h"
+#include "aas_file.h"
+#include "aas_gsubdiv.h"
+#include "aas_map.h"         //AAS_CreateMapBrushes
+#include "aas_prunenodes.h"
+#include "aas_store.h"
+#include "aas_store.h"       //AAS_MAX_BBOXES
+#include "ahangles.h"
+#include "ahglobal.h"
+#include "ahglyph.h"
+#include "ahhint.h"
+#include "ahloader.h"
+#include "ahmodule.h"
+#include "ahoptim.h"
+#include "ahtypes.h"
+#include "amigaos.h"
+#include "anorms256.h"
+#include "arpa_telnet.h"
+#include "autohint.h"
+#include "base64.h"
+#include "be_aas_bspc.h"
+#include "be_interface.h"
+#include "bg_lib.h"
+#include "bg_local.h"
+#include "bg_public.h"
+#include "botlib.h"
+#include "cg_local.h"
+#include "cg_public.h"
+#include "cm_local.h"
+#include "cm_patch.h"
+#include "cm_polylib.h"
+#include "config-amigaos.h"
+#include "config-mac.h"
+#include "config-riscos.h"
+#include "config-win32.h"
+#include "config.h" /* the configure script results */
+#include "connect.h"
+#include "connect.h" /* Curl_ourerrno() proto */
+#include "connect.h" /* for the Curl_ourerrno() proto */
+#include "content_encoding.h"
+#include "cookie.h"
+#include "crypto.h"
+#include "curl.h"
+#include "curlmsg.h"
+#include "curlmsg_vms.h"
+#include "curlver.h" /* the libcurl version defines */
+#include "curlx.h" /* from the private lib dir */
+#include "dict.h"
+#include "dl_local.h"
+#include "dl_public.h"
+#include "easy.h" /* nothing in curl is fun without the easy stuff */
+#include "err.h"
+#include "escape.h"
+#include "file.h"
+#include "float.h"
+#include "formdata.h"
+#include "formdata.h" /* for the boundary function */
+#include "freetype.h"
+#include "ftcalc.h"
+#include "ftcalc.h"      /* for FT_MulDiv() only */
+#include "ftconfig.h"
+#include "ftconfig.h"   /* for FT_DEBUG_LEVEL_TRACE, */
+#include "ftconfig.h"   /* read configuration information */
+#include "ftdebug.h"
+#include "ftdebug.h" /* for FT_TRACE() and FT_ERROR() */
+#include "ftdriver.h"
+#include "fterrors.h"
+#include "ftextend.h"
+#include "ftglyph.h"
+#include "ftgrays.h"
+#include "ftimage.h"
+#include "ftlist.h"
+#include "ftmemory.h"
+#include "ftmm.h"
+#include "ftmodule.h"
+#include "ftnames.h"
+#include "ftobjs.h"
+#include "ftobjs.h"  /* for ALLOC_ARRAY() and FREE() */
+#include "ftobjs.h"  /* for FT_UNUSED()               */
+#include "ftoption.h"
+#include "ftoutln.h"
+#include "ftoutln.h"          /* for FT_Outline_Decompose()    */
+#include "ftp.h"
+#include "ftraster.h"
+#include "ftrend1.h"
+#include "ftrender.h"
+#include "ftsmooth.h"
+#include "ftstream.h"
+#include "ftsystem.h"
+#include "fttypes.h"
+#include "g_func_decs.h" // declare all game functions
+#include "g_local.h"
+#include "g_public.h"
+#include "g_team.h" // teamplay specific stuff
+#include "getinfo.h"
+#include "getpart.h"
+#include "getpass.h"
+#include "glext.h"
+#include "glw_win.h"
+#include "hash.h"
+#include "homedir.h"
+#include "hostip.h"
+#include "http.h"
+#include "http.h" /* for HTTP proxy tunnel stuff */
+#include "http_chunks.h" /* for the structs and enum stuff */
+#include "http_digest.h"
+#include "http_negotiate.h"
+#include "http_ntlm.h"
+#include "hugehelp.h"
+#include "if2ip.h"
+#include "inet_ntoa_r.h"
+#include "inet_ntop.h"
+#include "inet_pton.h"
+#include "io.h"
+#include "jchuff.h"      /* Declarations shared with jchuff.c */
+#include "jchuff.h"      /* Declarations shared with jcphuff.c */
+#include "jdct.h"        /* Private declarations for DCT subsystem */
+#include "jdhuff.h"      /* Declarations shared with jdphuff.c */
+#include "jerror.h"
+#include "jinclude.h"
+#include "jmemsys.h"     /* import the system-dependent declarations */
+#include "jpeglib.h"
+#include "jversion.h"
+#include "keycodes.h"
+#include "krb4.h"
+#include "l_bsp_ent.h"
+#include "l_bsp_q1.h"
+#include "l_bsp_q2.h"
+#include "l_bsp_q3.h"
+#include "l_bsp_sin.h"
+#include "l_cmd.h"
+#include "l_libvar.h"
+#include "l_log.h"
+#include "l_math.h"
+#include "l_mem.h"
+#include "l_memory.h"
+#include "l_poly.h"
+#include "l_precomp.h"
+#include "l_qfiles.h"
+#include "l_script.h"
+#include "l_threads.h"
+#include "l_utils.h"
+#include "ldap.h"
+#include "linux_local.h"
+#include "linux_local.h" // bk001130
+#include "linux_local.h" // bk001204
+#include "llist.h"
+#include "mac_glimp.h"
+#include "mac_local.h"
+#include "mac_local.h" // For VID_Printf
+#include "macosx_qgl.h"
+#include "math.h"   //fabs
+#include "math_angles.h"
+#include "math_matrix.h"
+#include "math_quaternion.h"
+#include "math_vector.h"
+#include "md5.h"
+#include "memdebug.h"
+#include "memory.h"
+#include "multi.h"
+#include "netrc.h"
+#include "openssl/crypto.h"
+#include "openssl/err.h"
+#include "openssl/pem.h"
+#include "openssl/rsa.h"
+#include "openssl/ssl.h"
+#include "openssl/x509.h"
+#include "pem.h"
+#include "progress.h"
+#include "psnames.h"
+#include "q2files.h"
+#include "q3files.h"
+#include "q_shared.h"
+#include "q_splineshared.h"      //DAJ
+#include "qbsp.h"
+#include "qcc.h"
+#include "qcommon.h"
+#include "qfiles.h"
+#include "qgl.h"
+#include "qgl_linked.h"
+#include "resource.h"
+#include "rsa.h"
+#include "security.h"
+#include "sendf.h"
+#include "sendf.h"   /* for the client write stuff */
+#include "setup.h"
+#include "setup.h" /* portability help from the lib directory */
+#include "setup.h" /* setup.h is required for read() prototype */
+#include "sfdriver.h"
+#include "sfnt.h"
+#include "sfobjs.h"
+#include "share.h"
+#include "sinfiles.h"
+#include "speedcheck.h"
+#include "ssl.h"
+#include "ssluse.h"
+#include "stdio.h"  /* for vprintf() */
+#include "strequal.h"
+#include "strerror.h"
+#include "strtok.h"
+#include "strtoofft.h"
+#include "surfaceflags.h"            // shared with the q3map utility
+#include "t1tables.h"
+#include "telnet.h"
+#include "test.h"
+#include "time.h"   //time & ctime
+#include "timeval.h"
+#include "tr_local.h"
+#include "tr_public.h"
+#include "tr_types.h"
+#include "transfer.h"
+#include "ttcmap.h"
+#include "ttdriver.h"
+#include "tterrors.h"
+#include "ttgload.h"
+#include "ttinterp.h"
+#include "ttload.h"
+#include "ttnameid.h"
+#include "ttobjs.h"
+#include "ttpload.h"
+#include "ttpost.h"
+#include "ttsbit.h"
+#include "tttables.h"
+#include "tttags.h"
+#include "tttypes.h"
+#include "ui_local.h"
+#include "ui_local.h"    // For CS settings/retrieval
+#include "ui_public.h"
+#include "ui_shared.h"
+#include "unix_glw.h"
+#include "unzip.h"
+#include "url.h"
+#include "url.h" /* for Curl_safefree() */
+#include "url.h" /* for the ssl config check function */
+#include "urldata.h"
+#include "urldata.h"  /* for struct connectdata * */
+#include "urldata.h" /* it includes http_chunks.h */
+#include "urlglob.h"
+#include "util_list.h"
+#include "util_str.h"
+#include "version.h"
+#include "vm_local.h"
+#include "win_local.h"
+#include "writeenv.h"
+#include "writeout.h"
+#include "x509.h"
+// #include "ATIGL.h"
+//#include "../shared/idflags.h"
+//#include "../shared/interface.h"
+//#include "../shared/keycodes.h"
+//#include "../shared/windings.h"
+//#include "ai_cast_global.h"
+//#include "assert.h"
+//#include "bg_public.h"
+//#include "l_qfiles.h"
+//#include "l_utils.h"
+//#include "q2files.h"
+//#include "qfiles.h"
+//#include "surfaceflags.h"
+//#include "util_heap.h"
+
+## System Includes (<...>)
+	#include <stdlib.h>
+  #include <fpu_control.h> // bk001213 - force dumps on divide by zero
+  #include <mntent.h>
+  #include <sys/stat.h>
+  #include <sys/vt.h>
+#include <AGL/agl.h>
+#include <Carbon/Carbon.h>
+#include <DrawSprocket/DrawSprocket.h>
+#include <GL/fxmesa.h>
+#include <GL/gl.h>
+#include <GL/glx.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glext.h>
+#include <X11/cursorfont.h>
+#include <X11/extensions/xf86dga.h>
+#include <X11/extensions/xf86vmode.h>
+#include <X11/keysym.h>
+#include <abi_mutex.h>
+#include <ares.h>
+#include <ares_version.h>
+#include <arpa/inet.h>
+#include <arpa/inet.h> // bk001204
+#include <assert.h>
+#include <bsdsocket.h>
+#include <ca-bundle.h>
+#include <conio.h>
+#include <ctype.h>
+#include <curl.h>
+#include <curl/curl.h>
+#include <curl/curl.h> /* for the curl_off_t type */
+#include <curl/curl.h> /* for the typedefs */
+#include <curl/curlver.h>
+#include <curl/easy.h>
+#include <curl/easy.h> /* new for v7 */
+#include <curl/mprintf.h>
+#include <curl/stdcheaders.h>
+#include <curl/types.h>
+#include <curl/types.h> /* new for v7 */
+#include <curlx.h> /* header from the libcurl directory */
+#include <des.h>
+#include <dinput.h>
+#include <direct.h>
+#include <directx.h>
+#include <dirent.h>
+#include <dlfcn.h>
+#include <dos.h>
+#include <dsound.h>
+#include <errno.h>
+#include <exec/execbase.h>
+#include <exec/types.h>
+#include <extra/strdup.h>
+#include <extra/stricmp.h>
+#include <fcntl.h>
+#include <float.h>
+#include <floss.h>
+#include <gl.h>
+#include <glob.h>
+#include <gssapi.h>
+#include <gssapi/gssapi.h>
+#include <gssapi/gssapi_generic.h>
+#include <gtk/gtk.h>
+#include <idn-free.h>
+#include <idna.h>
+#include <in.h>
+#include <inet.h>
+#include <io.h>
+#include <iphlpapi.h>
+#include <iptypes.h>
+#include <kernel.h>
+#include <krb.h>
+#include <libc.h>
+#include <libgen.h>
+#include <library.h>
+#include <limits.h>
+#include <limits.h> // LBO - for PATH_MAX, below
+#include <linux/joystick.h>
+#include <linux/soundcard.h>
+#include <lmcons.h>
+#include <lmerr.h>
+#include <lmwksta.h>
+#include <malloc.h>
+#include <malloc.h>          // for _alloca()
+#include <math.h>
+#include <memory.h>
+#include <mmsystem.h>
+#include <mprintf.h>
+#include <net/if.h>
+#include <netdb.h>
+#include <netinet/in.h>
+#include <netinet/in.h> /* <netinet/tcp.h> may need it */
+#include <netinet/tcp.h> /* for TCP_NODELAY */
+#include <netware.h>
+#include <nks/synch.h>
+#include <nks/thread.h>
+#include <openssl/bio.h>
+#include <openssl/crypto.h>
+#include <openssl/des.h>
+#include <openssl/engine.h>
+#include <openssl/err.h>
+#include <openssl/evp.h>
+#include <openssl/lhash.h>
+#include <openssl/md4.h>
+#include <openssl/md5.h>
+#include <openssl/objects.h>
+#include <openssl/opensslv.h>
+#include <openssl/pkcs12.h>
+#include <openssl/rand.h>
+#include <openssl/ssl.h>
+#include <openssl/x509.h>
+#include <openssl/x509_vfy.h>
+#include <openssl/x509v3.h>
+#include <process.h>
+#include <proto/dos.h>
+#include <proto/exec.h>
+#include <pthread.h>
+#include <pwd.h>
+#include <screen.h>
+#include <semaphore.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdio.h> /* for stderr */
+#include <stdio.h> /* needed for FILE */
+#include <stdlib.h>
+#include <stdlib.h>     /* required for free() prototypes */
+#include <stdlib.h> /* for strtol() */
+#include <stdlib.h> /* required for free() prototype, without it, this crashes
+#include <string.h>
+#include <string.h>             /* for memcpy() */
+#include <string.h>     /* for strcmp() */
+#include <stringprep.h>
+#include <strings.h>
+#include <support/SupportDefs.h>
+#include <sys/cdefs.h>
+#include <sys/filio.h>
+#include <sys/ioctl.h>
+#include <sys/ipc.h>
+#include <sys/mman.h>
+#include <sys/mman.h> // for PROT_ stuff
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/prctl.h>
+#include <sys/select.h>
+#include <sys/shm.h>
+#include <sys/socket.h>
+#include <sys/socket.h> /* required for send() & recv() prototypes */
+#include <sys/sockio.h>
+#include <sys/soundcard.h>
+#include <sys/stat.h>
+#include <sys/stat.h> // rain
+#include <sys/time.h>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <sys/utime.h>
+#include <sys/utsname.h>
+#include <sys/wait.h>
+#include <task.h>
+#include <tcp.h>
+#include <termios.h>
+#include <time.h>
+#include <tld.h>
+#include <unistd.h>
+#include <unistd.h>     /* for the close() proto */
+#include <unistd.h>   // AH - for size_t
+#include <unistd.h>  // bk001204
+#include <unistd.h> /* for getpid() */
+#include <unixlib.h>
+#include <utime.h>
+#include <windows.h>
+#include <winsock.h>
+#include <winsock2.h>
+#include <winsock2.h>        /* required by telnet.c */
+#include <ws2tcpip.h>
+#include <wsipx.h>
+#include <zlib.h>               /* for content-encoding */
+/*     #include <freetype/fterrors.h>                                    */
+//#include <GL/fxmesa.h>
+//#include <GL/glx.h> // bk010216 - FIXME: all of the above redundant? renderer/qgl.h
+//#include <MacHeaders.h>
+
+## Include Verzeichnis-Struktur
+
+  renderer/: 6 header files
+  qcommon/: 10 header files
+  game/: 18 header files
+  cgame/: 3 header files
+  ui/: 4 header files
+  win32/: 3 header files
+  unix/: 3 header files
+

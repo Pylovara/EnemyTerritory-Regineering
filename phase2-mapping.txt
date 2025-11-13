@@ -1,0 +1,37 @@
+# Phase 2: Include Path Mapping
+# Format: OLD_PATH -> NEW_PATH
+
+# Engine
+renderer/ -> ../engine/renderer/
+snd_dma/ -> ../engine/audio/
+sys/ -> ../engine/system/
+net/ -> ../engine/network/
+
+# Game
+game/ -> ../game/game/
+botai/ -> ../game/botai/
+botlib/ -> ../game/botlib/
+server/ -> ../game/server/
+
+# Client
+client/ -> ../client/client/
+cgame/ -> ../client/cgame/
+ui/ -> ../client/ui/
+
+# Shared
+qcommon/ -> ../shared/qcommon/
+splines/ -> ../shared/splines/
+curl-7.12.2/ -> ../shared/curl-7.12.2/
+jpeg-6/ -> ../shared/jpeg-6/
+ft2/ -> ../shared/ft2/
+null/ -> ../shared/null/
+
+# Platform
+win32/ -> ../windows/win32/
+unix/ -> ../linux/unix/
+mac/ -> ../shared/mac/
+
+# Tools
+bspc/ -> ../tools/bspc/
+extractfuncs/ -> ../tools/extractfuncs/
+
