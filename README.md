@@ -44,7 +44,8 @@
 
 // NoQuader re ...
 # https://github.com/core-c/WET-NoQuarter
-#
+# https://www.prime-squadron.com/viewtopic.php?f=15&t=9983
+# 
 
 // Silent re ..
 #
