@@ -3,8 +3,11 @@
 /// IDE Ideen
 # MCS IDE C to MCS Offline/Pylovara/Kernel/IDE
 
-/// Umbau die 
+/// Umbau zum Arbeiten
 # https://github.com/zeelsheladiya/Awesome-IDEs
+
+/// Notiz : Nicht zwingend nötig da et C ist , vielleicht anderer baukasten für Commnity
+# https://www.radiance-online.org/download-install/radiance-source-code
 
 /// Spekulativer Kerngebrauch Berechnungskern verwenden (eventuell , weil gut)
 # https://docs.idmod.org/projects/emod-tuberculosis/en/2.20_a/dev-install-download-emod.html
