@@ -20,7 +20,7 @@
 // Jaymod
 # https://github.com/budjb/jaymod
 // Nitmod 
-# https://github.com/SebDanielsson/nitmod <---- interessant src daten 
+# https://github.com/SebDanielsson/nitmod <---- interesant source 
 
 ------------------------------------------------------------------------------------------------
 /// Mods Info Sites 
