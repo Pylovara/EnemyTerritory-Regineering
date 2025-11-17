@@ -19,6 +19,7 @@
 
 // Jaymod
 # https://github.com/budjb/jaymod
+# https://github.com/SebDanielsson/nitmod <---- interessant src daten 
 
 ------------------------------------------------------------------------------------------------
 /// Mods Info Sites 
@@ -27,6 +28,7 @@
 # https://github.com/sebdanielsson/nitmod 
 # https://deepwiki.com/sebdanielsson/nitmod/3-n!tmod-game-modification
 # https://ets-clan.net/index.php?/files/category/53-nitmod/
+# https://sebdanielsson.github.io/nitmod/docs/installation/
 
 // Etlegacy 
 # https://etlegacy.readthedocs.io/en/latest/
