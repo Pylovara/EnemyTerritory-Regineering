@@ -1,4 +1,4 @@
-*Quelle for Work* [regineering]
+*Quelle for Work* [regineering] /// spiel wird danach in MCS Kernel eingebaut 
 ------------------------------------------------------------------------------------------------
 /// IDE Ideen
 # MCS IDE C to MCS Offline/Pylovara/Kernel/IDE
@@ -45,7 +45,7 @@
 // NoQuader re ...
 # https://github.com/core-c/WET-NoQuarter
 # https://www.prime-squadron.com/viewtopic.php?f=15&t=9983
-# 
+# http://www.wolfenstein4ever.de/index.php/downloads/summary/27-et-mods/1788-no-quarter-1-2-9-b5
 
 // Silent re ..
 #
@@ -56,6 +56,11 @@
 #
 
 // 
+
+------------------------------------------------------------------------------------------------
+
+// OmniBots upgraden auf AI cli per original daten als grundlage
+# https://github.com/jswigart/omni-bot
 
 ------------------------------------------------------------------------------------------------
 
