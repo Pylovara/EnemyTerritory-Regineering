@@ -75,4 +75,7 @@
 // Masterlist
 # https://sourceforge.net/projects/dpmaster/
 
+// Handbuch einbauen ins spiel
+# https://etmanual-de.et-scene.de/ nachbearbeitung
+
 ------------------------------------------------------------------------------------------------
