@@ -17,6 +17,9 @@
 # https://github.com/id-Software/Enemy-Territory
 # https://github.com/etlegacy/etlegacy
 
+// BSD Linux win 32/64 alternativ gereinigtes build
+# https://github.com/morsik/war-territory
+
 ------------------------------------------------------------------------------------------------
 /// Mods Sourced 
 
