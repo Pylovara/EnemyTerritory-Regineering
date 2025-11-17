@@ -66,4 +66,7 @@
 // Speziell Modpackets
 # https://www.moddb.com/mods/et-map-packs
 
+// Eleminieren
+# https://github.com/Ch40zz/CCHookReloaded unbrauchbar machen
+
 ------------------------------------------------------------------------------------------------
