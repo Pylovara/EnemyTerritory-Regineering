@@ -36,8 +36,9 @@
 #
 
 // ET Pro
-#
-#
+# https://ets-clan.net/index.php?/forums/topic/259-enemy-territory-public-source-code-260/
+# http://etpro.de/
+# https://etpro.anime.net/
 
 // NoQuader re ...
 # https://github.com/core-c/WET-NoQuarter
@@ -68,5 +69,8 @@
 
 // Eleminieren
 # https://github.com/Ch40zz/CCHookReloaded unbrauchbar machen
+
+// Masterlist
+# https://sourceforge.net/projects/dpmaster/
 
 ------------------------------------------------------------------------------------------------
