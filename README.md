@@ -1,5 +1,9 @@
 ######## Quelle for Work  #########
 
+#### IDE Ideen
+-- https://docs.idmod.org/projects/emod-tuberculosis/en/2.20_a/dev-install-download-emod.html
+
+
 #### Clients
 
 -- https://github.com/id-Software/Enemy-Territory
