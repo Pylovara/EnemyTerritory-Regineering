@@ -21,6 +21,8 @@
 # https://github.com/budjb/jaymod
 // Nitmod 
 # https://github.com/SebDanielsson/nitmod <---- interesant source 
+// Halflife
+# https://www.moddb.com/mods/enemy-territory-source
 
 ------------------------------------------------------------------------------------------------
 /// Mods Info Sites 
