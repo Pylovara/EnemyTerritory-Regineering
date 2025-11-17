@@ -6,7 +6,7 @@
 /// Umbau die 
 # https://github.com/zeelsheladiya/Awesome-IDEs
 
-/// Spekulativer Kerngebrauch 
+/// Spekulativer Kerngebrauch Berechnungskern verwenden (eventuell , weil gut)
 # https://docs.idmod.org/projects/emod-tuberculosis/en/2.20_a/dev-install-download-emod.html
 ------------------------------------------------------------------------------------------------
 /// Clients
