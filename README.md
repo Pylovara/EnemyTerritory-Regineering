@@ -34,11 +34,11 @@
 ------------------------------------------------------------------------------------------------
 /// Mods Info Sites 
 
-// Nitmod re...
+// Nitmod  neben infos re...
 # 
-# https://deepwiki.com/sebdanielsson/nitmod/3-n!tmod-game-modification
-# https://ets-clan.net/index.php?/files/category/53-nitmod/
-# https://sebdanielsson.github.io/nitmod/docs/installation/
+# https://deepwiki.com/sebdanielsson/nitmod/3-n!tmod-game-modification not dev
+# https://ets-clan.net/index.php?/files/category/53-nitmod/ not dev
+# https://sebdanielsson.github.io/nitmod/docs/installation/ not dev
 
 // Etlegacy 
 # https://etlegacy.readthedocs.io/en/latest/
