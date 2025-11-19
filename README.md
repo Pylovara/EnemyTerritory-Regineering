@@ -20,6 +20,7 @@
 // BSD Linux win 32/64 alternativ gereinigtes build
 # https://github.com/morsik/war-territory
 
+// spekulativ WASM als generelle grundlagen nutzung für alles was ein browser hat
 ------------------------------------------------------------------------------------------------
 /// Mods Sourced 
 
