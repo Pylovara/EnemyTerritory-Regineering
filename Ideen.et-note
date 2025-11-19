@@ -3,6 +3,8 @@
 HP Upgrade :
 
 Für jeden Double oder Triple Kill ein HP Upgrade im laufenden Match von +1 HP 
+
+zuzüglich positionsabhängig def werte gegen abzug anpassen , unabhängig von double und triple kill 
 1 position : +10 hppunkte auf Körpertreffer
 2 position : +8 hppunkte auf Körpertreffer
 3 position : +6 hppunkte auf Körpertreffer
