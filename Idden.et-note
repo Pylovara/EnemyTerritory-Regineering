@@ -1,0 +1,27 @@
+## Ideen sektion 
+
+HP Upgrade :
+
+Für jeden Double oder Triple Kill ein HP Upgrade im laufenden Match von +1 HP 
+1 position : +10 hppunkte auf Körpertreffer
+2 position : +8 hppunkte auf Körpertreffer
+3 position : +6 hppunkte auf Körpertreffer
+4 position : +4 hppunkte auf Körpertreffer
+5 position : +2 hppunkte auf Körpertreffer
+-------------------------------------------
+man könnte dies unter den lua einstellbar machen für server admins und auf mehrere positionen ausweiten , verbessern , optimieren 
+
+Def Upgrade :
+
+Je nach Team Kill rangliste im laufenden match werden die positionen mit Defensiv punkten ausgestattet die körpertreffer Abzüge Minimieren 
+
+1 position : +8 defpunkte auf Körpertreffer
+2 position : +6 defpunkte auf Körpertreffer
+3 position : +4 defpunkte auf Körpertreffer
+4 position : +2 defpunkte auf Körpertreffer
+5 position : +0 defpunkte auf Körpertreffer
+-------------------------------------------
+man könnte dies un den lua einstellbar machen für server admins und auf mehrere positionen ausweiten , verbessern , optimieren 
+
+
+
