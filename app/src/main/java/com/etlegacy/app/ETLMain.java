@@ -13,7 +13,7 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
+//import android.widget.ImageView; <-- brauch noch den neuen ladebildschirm etl3.svg den ich gebaut habe 
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.Manifest;
@@ -46,7 +46,7 @@ public class ETLMain extends AppCompatActivity {
 	 */
 	private ProgressDialog DownloadBar() {
 		ProgressDialog asyncDialog = new ProgressDialog(this);
-		asyncDialog.setTitle("Downloading Game Data ..");
+		asyncDialog.setTitle("Download ET Legacy....");
 		asyncDialog.setIndeterminate(false);
 		asyncDialog.setProgress(0);
 		asyncDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
@@ -119,7 +119,7 @@ public class ETLMain extends AppCompatActivity {
 							Log.d("PERMISSION", "onActivityResult: Manage External Storage Permissions Denied");
 						}
 					}else{
-						//Below android 11
+						//Below android 11 <--- WTF sdk lvl 30 
 						Start();
 					}
 				}
@@ -166,15 +166,17 @@ public class ETLMain extends AppCompatActivity {
 	public void Start() {
 		Path etmain = null;
 		Path legacy = null;
+		Path nitmod = null;
 
 		if (!isExternalStorageWritable()) {
 			Log.d(PACK_TAG, "External storage is not available");
-			throw new RuntimeException("Fuck no ext. storage for writing");
+			throw new RuntimeException("Fuck .... no external. storage for writing");
 		}
 
 		try {
 			etmain = Paths.get(Objects.requireNonNull(getExternalFilesDir(null)).toPath() + "/etlegacy/etmain");
 			legacy = Paths.get(Objects.requireNonNull(getExternalFilesDir(null)).toPath() + "/etlegacy/legacy");
+			legacy = Paths.get(Objects.requireNonNull(getExternalFilesDir(null)).toPath() + "/etlegacy/nitmod");
 		} catch (Exception e) {
 			Log.e("ASSETS", "Could not fetch the external files directory", e);
 		}
@@ -203,7 +205,8 @@ public class ETLMain extends AppCompatActivity {
 		final Path pak0 = etmain.resolve("pak0.pk3");
 		final Path pak1 = etmain.resolve("pak1.pk3");
 		final Path pak2 = etmain.resolve("pak2.pk3");
-
+		final path nitmod_2.3.5 = etlegacy.resolve("nitmod_2.3.5.pk3")
+		
 		final Intent intent = new Intent(ETLMain.this, ETLActivity.class);
 		intent.addCategory(Intent.CATEGORY_HOME);
 		// intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -218,10 +221,10 @@ public class ETLMain extends AppCompatActivity {
 
 		final ProgressDialog progressDialog = DownloadBar();
 		final DownloadClient cc = new DownloadClient(this);
-
+		// download max speed von 1024kb 1.24mb auf 2000kb 2mb erhöt , sind ja nur läpische 300mb cirka  
 		Consumer<DownloadClient.DownloadProgress> progressConsumer = (progress) -> {
-			final int bytesWritten = (int) (progress.written / Math.pow(1024, 2));
-			int totalSize = (int) (progress.total / Math.pow(1024, 2));
+			final int bytesWritten = (int) (progress.written / Math.pow(2000, 2));
+			int totalSize = (int) (progress.total / Math.pow(2000, 2)); 
 			runOnUiThread(() -> {
 				progressDialog.setMax(totalSize);
 				progressDialog.setProgress(bytesWritten);
@@ -229,7 +232,9 @@ public class ETLMain extends AppCompatActivity {
 		};
 
 		final String mirrorUrl = "https://mirror.etlegacy.com/etmain/";
-
+		// zuverlässige quelle von ETC , kann man sich drauf verlassen das dass bleibt 
+		final String mirrirExt = "https://et.clan-etc.de/nitmod/"
+			
 		if (!Files.exists(pak2)) {
 			cc.downloadPackFile(mirrorUrl + pak2.getFileName(), pak2, progressDialog::dismiss, progressConsumer);
 		}
@@ -238,6 +243,10 @@ public class ETLMain extends AppCompatActivity {
 		}
 		if (!Files.exists(pak0)) {
 			cc.downloadPackFile(mirrorUrl + pak0.getFileName(), pak0, progressDialog::dismiss, progressConsumer);
+		}
+		// Auf dem server läd er automatisch den rest deswegen nur den mod
+		if (!Files.exists(nitmod_2.3.5)) {  
+			cc.downloadPackFile(mirrorExt + nitmod_2.3.5.getFileName(), nitmod_2.3.5, progressDialog::dismiss, progressConsumer);
 		}
 		cc.whenReady(() -> runOnUiThread(() -> {
 			progressDialog.dismiss();
