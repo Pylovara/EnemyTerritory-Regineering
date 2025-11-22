@@ -1,0 +1,5 @@
+
+
+- finde den client downloader und wechsel den 64 bit zu dem 32 bit aus
+- finde alle drawable touch layouts und lösch sie komplett 
+- finde die verfickte stelle wo die maus außerhalb des fensters zieht und elemiere die fehler quelle !!!!!!!!!!
